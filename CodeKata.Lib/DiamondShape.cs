@@ -1,22 +1,35 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace CodeKata.Lib
 {
-    public class DiamondShape
+    public interface IDiamondShape
+    {
+        bool IsValid(string[] arguments);
+
+        string CreateDiamondShape(char lastLetter);
+
+    }
+
+    public class DiamondShape : IDiamondShape
     {
         private const char _firstAlphabet = 'A';
         private const char _lastAlphabet = 'Z';
 
         public bool IsValid(string[] arguments)
         {
-            return arguments.Length >= 1
+            return arguments.Length == 1
                     && arguments[0].Length == 1 
-                    && char.ToUpper(arguments[0][0]) >= char.ToUpper(_firstAlphabet)
-                    && char.ToUpper(arguments[0][0]) <= char.ToUpper(_lastAlphabet);
+                    && validateAllowedChars(arguments[0][0]);
         }
 
         public string CreateDiamondShape(char lastLetter)
         {
+            if (!validateAllowedChars(lastLetter))
+            {
+                throw new ArgumentException("Argument not allowed. This method allows only alphabet charachter");
+            }
+
             int midIndex = calculateMidIndex(lastLetter);
             int diamondLength = (midIndex * 2) + 1;
             int lastLetterAscii = lastLetter;
@@ -62,6 +75,12 @@ namespace CodeKata.Lib
             lineOfChars[midIndex + distanceFromMid] = currentLetter;
 
             return lineOfChars;
+        }
+
+        private bool validateAllowedChars(char letter)
+        {
+            return char.ToUpper(letter) >= char.ToUpper(_firstAlphabet)
+                    && char.ToUpper(letter) <= char.ToUpper(_lastAlphabet);
         }
     }
 }

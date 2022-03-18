@@ -3,30 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond", ".\CodeKata\Diamond.csproj", "{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diamond", "CodeKata\Diamond.csproj", "{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeKata.Tests", ".\CodeKata.Tests\CodeKata.Tests.csproj", "{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeKata.Tests", "CodeKata.Tests\CodeKata.Tests.csproj", "{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeKata.Lib", ".\CodeKata.Lib\CodeKata.Lib.csproj", "{A410C559-869E-485E-A581-8690F3263278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeKata.Lib", "CodeKata.Lib\CodeKata.Lib.csproj", "{A410C559-869E-485E-A581-8690F3263278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Debug|x64.Build.0 = Debug|Any CPU
 		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Release|x64.ActiveCfg = Release|Any CPU
+		{BAB73D91-A3DB-4CC3-93B5-AD15F73DA6DC}.Release|x64.Build.0 = Release|Any CPU
 		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Debug|x64.ActiveCfg = Debug|x64
+		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Debug|x64.Build.0 = Debug|x64
 		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Release|x64.ActiveCfg = Release|x64
+		{AB177B02-8F54-4CB4-8FD8-F750B1606AF5}.Release|x64.Build.0 = Release|x64
 		{A410C559-869E-485E-A581-8690F3263278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A410C559-869E-485E-A581-8690F3263278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A410C559-869E-485E-A581-8690F3263278}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A410C559-869E-485E-A581-8690F3263278}.Debug|x64.Build.0 = Debug|Any CPU
 		{A410C559-869E-485E-A581-8690F3263278}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A410C559-869E-485E-A581-8690F3263278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A410C559-869E-485E-A581-8690F3263278}.Release|x64.ActiveCfg = Release|Any CPU
+		{A410C559-869E-485E-A581-8690F3263278}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

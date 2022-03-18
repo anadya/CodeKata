@@ -7,16 +7,8 @@ namespace CodeKata
     {
         static void Main(string[] args)
         {
-            DiamondShape diamondShape = new DiamondShape();
-
-            if (!diamondShape.IsValid(args))
-            {
-                Console.WriteLine("Input must be an alphabet character. Please provide valid input...");
-                return;
-            }
-
-            var letter = args[0][0];
-            Console.WriteLine(diamondShape.CreateDiamondShape(letter));
+            IDiamondShape diamondShape = new DiamondShape();
+            new DiamondShapeService(diamondShape).PrintDiamondShape(args);
         }
     }
 }
